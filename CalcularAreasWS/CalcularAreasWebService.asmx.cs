@@ -23,21 +23,21 @@ namespace CalcularAreasWS
         public double AreaCuadrado(double lado)
         {
             CalcularArea oCal = new CalcularArea();
-            return oCal.AreaCuadrado();
+            return oCal.AreaCuadrado(lado);
         }
 
         [WebMethod]
         public double AreaTriangulo(double _base, double altura)
         {
             CalcularArea oCal = new CalcularArea();
-            return oCal.AreaTriangulo();
+            return oCal.AreaTriangulo(_base, altura);
         }
 
         [WebMethod]
-        public double AreaCirculo(double r)
+        public double AreaCirculo(double radio)
         {
             CalcularArea oCal = new CalcularArea();
-            return oCal.AreaCirculo(r); ;
+            return oCal.AreaCirculo(radio); ;
         }
     }
 }
