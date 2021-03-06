@@ -13,11 +13,11 @@ namespace CalcularAreasWS
     public class CalcularAreasWebService : System.Web.Services.WebService
     {
 
-        [WebMethod]
-        public string HelloWorld()
-        {
-            return "Hola a todos";
-        }
+        //[WebMethod]
+        //public string HelloWorld()
+        //{
+        //    return "Hola a todos";
+        //}
 
         [WebMethod]
         public double AreaCuadrado(double lado)

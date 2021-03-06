@@ -4,10 +4,6 @@ namespace CalcularAreasWS
 {
     public class CalcularArea
     {
-        public double ladoBase { get; set; }
-        public double ladoAltura { get; set; }
-        public double radio { get; set; }
-
         public double AreaCuadrado(double lado)
         {
             return lado * lado;
