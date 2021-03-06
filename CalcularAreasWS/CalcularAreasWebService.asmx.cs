@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Services;
+﻿using System.Web.Services;
 
 namespace CalcularAreasWS
 {
@@ -27,14 +23,14 @@ namespace CalcularAreasWS
         public double AreaCuadrado(double lado)
         {
             CalcularArea oCal = new CalcularArea();
-            return oCal.AreaCuadrado(lado);
+            return oCal.AreaCuadrado();
         }
 
         [WebMethod]
         public double AreaTriangulo(double _base, double altura)
         {
             CalcularArea oCal = new CalcularArea();
-            return oCal.AreaTriangulo(_base, altura);
+            return oCal.AreaTriangulo();
         }
 
         [WebMethod]

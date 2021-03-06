@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace CalcularAreasWS
 {
@@ -11,26 +8,19 @@ namespace CalcularAreasWS
         public double ladoAltura { get; set; }
         public double radio { get; set; }
 
-        public double AreaCuadrado(double lado)
+        public double AreaCuadrado()
         {
-            lado = ladoBase;
-
             return ladoBase * ladoBase;
         }
 
-        public double AreaTriangulo(double _base, double altura)
+        public double AreaTriangulo()
         {
-            _base = ladoBase;
-            altura = ladoAltura;
-
             return (ladoBase * ladoAltura) / 2;
         }
 
-        public double AreaCirculo(double r)
+        public double AreaCirculo()
         {
-            r = radio;
-
-            return (Math.PI * Math.Pow(radio,2));
+            return (Math.PI * Math.Pow(radio, 2));
         }
     }
 }
